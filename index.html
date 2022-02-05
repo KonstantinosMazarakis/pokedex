@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css" />
+    <link rel="stylesheet" href="./assets.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <div class="center">
+        <div class="pokedex">
+            <div class="leftside">
+                <img src="./assets/light.png" class="blink_me" alt="blink">
+                <div id="screen">
+                    <ul id="Summon">
+                        <li>#<span id="Num"></span></li>
+                        <li>Name: <span id="Pname"></span></li>
+                        <li>Type: <span id="Type"></span><span id="Type2"></span></li>
+                        <li>Weight: <span id="Weight"></span></li>
+                    </ul>
+                </div>
+                <div id="screen2">
+                </div>
+                <img src="./assets/pika.gif" alt="pika" id="pika">
+            </div>
+            <div class="rightside">
+                <input type="text" id="pokemonName" placeholder="Pokemon Name..."/>
+                <div class="blueButtons">
+                  <button type="button" id="musicStart" onclick="mStart()" class="nes-btn is-primary buttons-fix">▶</button><button type="button" onclick="mStop()" id="musicStop" class="nes-btn is-primary buttons-fix">||</button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button><button type="button" class="nes-btn is-primary buttons-fix"></button>
+                </div>
+                <button type="button" onclick="search(), summoner()" class="nes-btn is-warning go">GO</button>
+            </div>
+            <img src="./assets/lugia.gif" alt="lugia" id="Lugia">
+        </div>
+</div>
+<audio src="./assets/04 Pallet Town.mp3" id="Audio1" loop></audio>
+<script src="./style.js"></script>
+</body>
+</html>
