@@ -17,7 +17,6 @@ Audio1.volume = 0.03;
 async function search(){
     var response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.value}`);
     var coderData = await response.json();
-    console.log(coderData.sprites.front_default);
 // bugfixes -_-
 Type.style.fontSize = "1rem";
 Type2.style.fontSize = "1rem";
