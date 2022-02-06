@@ -7,8 +7,6 @@ var Type2 = document.querySelector("#Type2")
 var Weight = document.querySelector("#Weight")
 var screen2 = document.querySelector("#screen2")
 var Audio1 = document.querySelector("#Audio1")
-var Summon = document.querySelector("#Summon")
-console.log(Summon)
 
 
 Audio1.volume = 0.03;
