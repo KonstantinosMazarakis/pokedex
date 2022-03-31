@@ -12,8 +12,9 @@ var Audio1 = document.querySelector("#Audio1")
 Audio1.volume = 0.03;
 
 
+
 async function search(){
-    var response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.value}`);
+    var response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName.value.toLowerCase()}`);
     var coderData = await response.json();
 // bugfixes -_-
 Type.style.fontSize = "1rem";
